@@ -145,13 +145,13 @@ class PyChain:
 @st.cache(allow_output_mutation=True)
 def setup():
     print("Initializing Chain")
-    return PyChain([Block("Genesis", 0)])
+    return PyChain([Block(record="Genesis", creator_id=0)])
 
+pychain = setup()
 
 st.markdown("# PyChain")
 st.markdown("## Store a Transaction Record in the PyChain")
 
-pychain = setup()
 
 ################################################################################
 # Step 3:
@@ -191,7 +191,7 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        data=Record(sender=sender, receiver=receiver, amount=amount),
+        record=Record(sender=sender, receiver=receiver, amount=amount),
         creator_id=42,
         prev_hash=prev_block_hash
     )
