@@ -21,6 +21,14 @@ A blockchain-based ledger system, complete with a user-friendly web interface. T
 
 ---
 
+## Streamlit
+
+[Streamlit Docs](https://streamlit.io/)
+
+    pip install streamlit
+
+---
+
 ## Step 1: Create a Record Data Class
 
 ```
