@@ -22,8 +22,9 @@ A blockchain-based ledger system, complete with a user-friendly web interface. T
 ---
 
 ## Streamlit
+Streamlit is an open source app framework in Python Language. It assists in the creation of web apps, compatible with major Python Libraries such as scikit-learn, Keras, NumPy, pandas, Matplotlib, etc.
 
-[Streamlit Docs](https://streamlit.io/)
+For more information visit - **[Streamlit](https://streamlit.io/)**
 
     pip install streamlit
 
@@ -67,14 +68,14 @@ amount = st.text_input("Amount")
 
 2. In the terminal, run the Streamlit application by using `streamlit run pychain.py`.
 
-3. Enter values for the sender, receiver, and amount, and then click the Add Block button. Do this several times to store several blocks in the ledger.
+3. Enter values for the sender, receiver, and amount, and then click the Add Block button. Do this several times to store several blocks in the ledger. A default difficulty of 2 is set, however, this can be adjusted in the sidebar (left of screen)
 
 4. Verify the block contents and hashes in the Streamlit dropdown menu.
 
 ![Transaction Validation](Images/transaction_val_pychain.png)
 
 
-5. Test the blockchain validation process by using the web interface.
+5. Test the blockchain validation process by using the web interface. 
 
 Block Inspector             |  Selected Block Inspector
 :-------------------------:|:-------------------------:
